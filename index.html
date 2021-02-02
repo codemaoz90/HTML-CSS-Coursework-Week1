@@ -12,6 +12,12 @@
 			rel="stylesheet"
 			type="text/css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+			integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+			crossorigin="anonymous"
+		/>
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
@@ -25,9 +31,9 @@
 			<div>
 				<img src="images/logo.png" alt="LOGO" class="logo" />
 				<nav class="navigation-menu">
-					<a class="navigation-link" href="">About</a>
-					<a class="navigation-link" href="">Menu</a>
-					<a class="navigation-link" href="">Contact</a>
+					<a class="navigation-link" href="#about">About</a>
+					<a class="navigation-link" href="#menu">Menu</a>
+					<a class="navigation-link" href="#contact">Contact</a>
 				</nav>
 			</div>
 
@@ -39,7 +45,7 @@
 			/>
 		</header>
 		<main class="container">
-			<section class="about">
+			<section id="about" class="about">
 				<img src="images/pizzaAbout.jpg" alt="aboutImg" width="50%" />
 				<div class="about-content">
 					<h1>About Catering</h1>
@@ -53,7 +59,7 @@
 					</p>
 				</div>
 			</section>
-			<section class="menu">
+			<section id="menu" class="menu">
 				<div class="menu-content">
 					<h1>Our Menu</h1>
 					<h3>Bread Basket</h3>
@@ -83,7 +89,7 @@
 				</div>
 				<img src="images/pizzaMenu.jpg" alt="Menu" width="50%" />
 			</section>
-			<section class="contact">
+			<section id="contact" class="contact">
 				<h1>Contact</h1>
 				<p>
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis quidem
@@ -106,12 +112,18 @@
 				</form>
 			</section>
 		</main>
-		<footer>
+		<footer class="footer">
 			<p>Realizado por Manuel</p>
-			<div class="socialLinks">
-				<a href="">Facebook</a>
-				<a href="">Twitter</a>
-				<a href="">Instagram</a>
+			<div class="social-links">
+				<a href="https://www.facebook.com" target="_blank"
+					><i class="fab fa-facebook-square"></i
+				></a>
+				<a href="https://www.twitter.com" target="_blank"
+					><i class="fab fa-twitter-square"></i
+				></a>
+				<a href="https://www.instagram.com" target="_blank"
+					><i class="fab fa-instagram-square"></i
+				></a>
 			</div>
 		</footer>
 	</body>
