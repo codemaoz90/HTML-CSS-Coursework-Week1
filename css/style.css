@@ -1,8 +1,45 @@
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- */
+*,
+*::after,
+*:before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--ffamily: "Times New Roman", Georgia, Serif;
+	--textColor: rgb(50, 55, 59);
+	--backgroundColor: rgba(249, 250, 252, 0.966);
+}
+
+body {
+	font-family: var(--ffamily);
+	color: var(--textColor);
+	background-color: var(--backgroundColor);
+}
+
+/* Header */
+
+.header div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo {
+	width: 100px;
+}
+.navigation-menu {
+	display: flex;
+	justify-content: space-around;
+	width: 300px;
+}
+.navigation-link {
+	text-decoration: none;
+	color: var(--textColor);
+	font-size: 1.1rem;
+	letter-spacing: 0.2rem;
+	padding: 0.5rem;
+}
+.navigation-link:hover {
+	background-color: rgb(191, 191, 196);
+}
