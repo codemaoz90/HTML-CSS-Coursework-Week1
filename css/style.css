@@ -10,24 +10,39 @@
 	--ffamily: "Times New Roman", Georgia, Serif;
 	--textColor: rgb(50, 55, 59);
 	--backgroundColor: rgba(249, 250, 252, 0.966);
+	--lineheight: 1.7rem;
+	--titleSize: 1.8rem;
+	--textSize: 1.1rem;
 }
 
 body {
+	line-height: var(--lineheight);
 	font-family: var(--ffamily);
 	color: var(--textColor);
 	background-color: var(--backgroundColor);
 }
 
 /* Header */
-
+.header {
+	text-align: center;
+}
 .header div {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	height: 80px;
+	box-shadow: 0px 3px 9px 0px rgba(175, 175, 175, 0.75);
+	position: fixed;
+	width: 100%;
+	background-color: white;
 }
-.logo {
+.header .logo {
 	width: 100px;
 }
+.header .banner {
+	margin-top: 80px;
+}
+
 .navigation-menu {
 	display: flex;
 	justify-content: space-around;
@@ -42,4 +57,39 @@ body {
 }
 .navigation-link:hover {
 	background-color: rgb(191, 191, 196);
+}
+
+/*  main container */
+
+.container {
+	max-width: 90%;
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 4rem;
+}
+
+/* Section About */
+.about {
+	display: flex;
+	justify-content: space-between;
+}
+.about-content {
+	text-align: center;
+}
+.about-content h1 {
+	font-family: "Playfair Display", serif;
+	letter-spacing: 0.3rem;
+	font-size: var(--titleSize);
+	margin-top: 2rem;
+}
+.about-content span {
+	margin-top: 3rem;
+	display: block;
+	letter-spacing: 0.3rem;
+}
+.about-content p {
+	text-align: left;
+	margin-left: 3.5rem;
+	margin-top: 1rem;
+	font-size: var(--textSize);
 }
